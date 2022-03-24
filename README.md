@@ -10,6 +10,14 @@ This is a starter template made with <a href="https://vitejs.dev">Vite</a> + <a 
 Build super fast desktop applications!
 </p>
 
+<br>
+
+<div align="center">
+<img src="./demo.gif">
+</div>
+
+<br><br>
+
 ## Technologies used
 
 - Vite
