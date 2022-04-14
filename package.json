@@ -8,25 +8,25 @@
     "build:debug": "vite build && tauri build --debug"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.0.0-rc.2",
-    "@vueuse/core": "^7.7.1",
-    "vue": "^3.2.31",
+    "@tauri-apps/api": "^1.0.0-rc.3",
+    "@vueuse/core": "^8.2.5",
+    "vue": "^3.2.32",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.18.9",
+    "@antfu/eslint-config": "^0.20.2",
     "@spada/windicss-plugin-bsgrid": "^0.1.4",
-    "@tauri-apps/cli": "^1.0.0-rc.7",
-    "@types/node": "^17.0.22",
-    "@vitejs/plugin-vue": "^2.2.4",
-    "@vue/compiler-sfc": "^3.2.31",
-    "eslint": "^8.11.0",
-    "sass": "^1.49.9",
-    "unplugin-auto-import": "^0.6.6",
-    "unplugin-vue-components": "^0.17.21",
-    "vite": "^2.8.6",
-    "vite-auto-import-resolvers": "^2.2.2",
-    "vite-plugin-pages": "^0.21.4",
-    "vite-plugin-windicss": "^1.8.3"
+    "@tauri-apps/cli": "^1.0.0-rc.8",
+    "@types/node": "^17.0.24",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/compiler-sfc": "^3.2.32",
+    "eslint": "^8.13.0",
+    "sass": "^1.50.0",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.2",
+    "vite": "^2.9.4",
+    "vite-auto-import-resolvers": "^2.2.3",
+    "vite-plugin-pages": "^0.22.0",
+    "vite-plugin-windicss": "^1.8.4"
   }
 }
