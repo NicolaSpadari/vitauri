@@ -1,6 +1,6 @@
 <template>
     <nav class="fixed bg-dark w-screen top-0 inset-x-0 shadow-lg">
-        <div class="container-fluid py-4">
+        <div container class="py-4">
             <div class="flex justify-between">
                 <router-link to="/" class="font-bold text-white">
                     Home

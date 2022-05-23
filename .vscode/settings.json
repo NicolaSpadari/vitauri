@@ -1,21 +1,17 @@
 {
-    "prettier.enable": false,
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+	"editor.formatOnSave": false,
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
     "eslint.validate": [
         "javascript",
         "typescript",
         "vue",
-        "html"
+        "html",
+        "json"
     ],
-    "explorer.experimental.fileNesting.enabled": true,
-    "explorer.experimental.fileNesting.expand": false,
-    "explorer.experimental.fileNesting.patterns": {
-        "package.json": "package*",
-        "readme.md": "*.md",
-        ".gitignore": ".git*, .eslint*",
-    },
+    "explorer.fileNesting.patterns": {
+        ".gitignore": ".git*, *.d.ts"
+    }
 }

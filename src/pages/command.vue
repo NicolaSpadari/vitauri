@@ -1,5 +1,5 @@
 <template>
-    <div class="container space-y-20 mt-30">
+    <div container class="space-y-20 mt-30">
         <p class="text-white text-3xl font-bold">
             {{ $route.name }}:
         </p>
@@ -16,7 +16,7 @@
             <p class="text-white">
                 Result:
             </p>
-            <p v-if="result!=''" class="text-white mt-5">
+            <p v-if="result !== ''" class="text-white mt-5">
                 {{ result }}
             </p>
         </div>
@@ -27,7 +27,7 @@
     const input = ref("");
     const result = ref("");
 
-    const sendCommand = async() => {
+    const sendCommand = async () => {
         result.value = await useShell(input.value, "pwsh");
     };
 </script>

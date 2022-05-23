@@ -1,5 +1,5 @@
 <template>
-    <div class="container space-y-20 mt-30">
+    <div container class="space-y-20 mt-30">
         <p class="text-white text-3xl font-bold">
             {{ $route.name }}:
         </p>
@@ -26,7 +26,7 @@
         body: "test body"
     };
 
-    const testNotification = async() => {
+    const testNotification = async () => {
         result.value = await useNotification(options);
     };
 </script>

@@ -18,4 +18,7 @@
 		-webkit-user-drag: none;
 		@apply select-none;
 	}
+    [container]{
+        @apply mx-auto
+    }
 </style>

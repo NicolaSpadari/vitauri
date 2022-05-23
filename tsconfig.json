@@ -16,10 +16,14 @@
         "types": [
             "vite/client",
             "vite-plugin-pages/client",
+            "@types/node"
         ],
         "paths": {
             "@/*": ["src/*"]
         }
+    },
+    "vueCompilerOptions": {
+        "experimentalDisableTemplateSupport": true
     },
     "exclude": ["dist", "node_modules", ".vscode", "public"]
 }
