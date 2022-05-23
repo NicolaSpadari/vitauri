@@ -22,7 +22,7 @@ Build super fast desktop applications!
 
 - Vite
 - Vue 3
-- WindiCSS + Bootstrap 5 grid plugin
+- UnoCSS
 - Typescript + linting
 - API auto import (you can add more or disable some in the `vite.config.ts` file) by `unplugin-auto-import`
 - Components auto import by `unplugin-vue-components`
