@@ -19,6 +19,6 @@
 		@apply select-none;
 	}
     [container]{
-        @apply mx-auto
+        @apply mx-auto;
     }
 </style>
