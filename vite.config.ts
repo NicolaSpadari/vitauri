@@ -54,6 +54,7 @@ export default defineConfig({
             allow: [".."]
         },
         host: true,
-        port: 8080
+        port: 8080,
+        strictPort: true
     }
 });
