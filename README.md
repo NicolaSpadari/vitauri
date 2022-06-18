@@ -2,11 +2,15 @@
     <img width="150" src="./public/logo.png" alt="logo">
 </p>
 
+<h1 align="center"> ⚡ViTauri </h1>
+
 <p align="center">
 This is a starter template made with <a href="https://vitejs.dev">Vite</a> + <a href="https://tauri.studio">Tauri</a> + <a href="https://vuejs.org">Vue 3</a>
 <br>
 Build super fast desktop applications!
 </p>
+
+<img src="https://img.shields.io/github/license/NicolaSpadari/vitauri" />
 
 <br>
 
