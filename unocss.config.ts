@@ -2,6 +2,7 @@ import {
     defineConfig,
     presetAttributify,
     presetIcons,
+    presetTagify,
     presetTypography,
     presetUno,
     presetWebFonts,
@@ -10,11 +11,19 @@ import {
 } from "unocss";
 
 export default defineConfig({
-    shortcuts: [],
+    shortcuts: [
+        ["crate", "max-w-5xl mx-auto"]
+    ],
     presets: [
         presetUno(),
+        presetTagify(),
         presetAttributify(),
-        presetIcons(),
+        presetIcons({
+            extraProperties: {
+                "display": "inline-block",
+                "vertical-align": "middle"
+            }
+        }),
         presetTypography(),
         presetWebFonts({
             fonts: {

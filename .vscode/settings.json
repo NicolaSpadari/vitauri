@@ -1,16 +1,4 @@
 {
-	"editor.formatOnSave": false,
-	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-    "eslint.validate": [
-        "javascript",
-        "typescript",
-        "vue",
-        "html",
-        "json"
-    ],
     "explorer.fileNesting.patterns": {
         ".gitignore": ".git*, *.d.ts"
     }

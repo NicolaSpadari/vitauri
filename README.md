@@ -2,8 +2,6 @@
     <img width="150" src="./public/logo.png" alt="logo">
 </p>
 
-<h1 align="center"> ⚡ViTauri </h1>
-
 <p align="center">
 This is a starter template made with <a href="https://vitejs.dev">Vite</a> + <a href="https://tauri.studio">Tauri</a> + <a href="https://vuejs.org">Vue 3</a>
 <br>
@@ -63,13 +61,17 @@ Build super fast desktop applications!
   ```
 
 ## Debugging
-You can simply open the console as you would normally in the browser during development. You need to compile the app in debug mode to test it when you wanna debug your builded project.
+You can simply open the console as you would normally in the browser during development.
+<br>
+You need to compile the app in debug mode to test it when you want to debug your builded project.
 
 ## Notes
 
-I build this simple demo wrapping the `shell` api and the `notification` api in a simple composable. If you don't need this you can just remove it and call the functions directly, for example if you need to handle the output in a more specific way.
+I built this simple demo wrapping the `shell` api and the `notification` api in a composable.
+<br>
+If you don't need this, you can just remove it and call the functions directly, for example if you need to handle the output in a more specific way.
 I'm also auto importing some of the APIs through `unplugin-auto-import`, if this creates confusion feel free to remove them and import them manually.
 
-## Bugs
-Tauri is currently in RC state. You can follow the updates in the official [Tauri GitHub page](https://github.com/tauri-apps/tauri/).
-Unless breaking changes are pushed in the next updates, this template should be updatable with no problems
+## License
+
+MIT License © 2022-PRESENT [NicolaSpadari](https://github.com/NicolaSpadari)

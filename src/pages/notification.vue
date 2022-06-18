@@ -1,20 +1,21 @@
 <template>
-    <div container class="space-y-20 mt-30">
-        <p class="text-white text-3xl font-bold">
-            {{ $route.name }}:
-        </p>
+    <div crate space-y-20 mt-30>
+        <PageTitle>
+            {{ $route.name }}
+        </PageTitle>
 
-        <div class="text-center space-x-4">
-            <button class="bg-accent text-darker px-3 py-1 rounded-md" @click="testNotification()">
-                Send a test notification
-            </button>
+        <div text-center space-x-4>
+            <Btn @click="testNotification()">
+                <span align-middle>
+                    Send a test notification
+                </span>
+                <i-heroicons-solid-bell w-4 h-4/>
+            </Btn>
         </div>
 
-        <div class="bg-dark rounded-md p-5 mt-5">
-            <p class="text-white">
-                Status: {{ result }}
-            </p>
-        </div>
+        <Output>
+            Status: {{ result }}
+        </Output>
     </div>
 </template>
 
@@ -22,8 +23,8 @@
     const result = ref("");
 
     const options = {
-        title: "Test notitification",
-        body: "test body"
+        title: "Test title",
+        body: "Test notification content"
     };
 
     const testNotification = async () => {

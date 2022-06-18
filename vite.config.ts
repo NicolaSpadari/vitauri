@@ -15,7 +15,12 @@ export default defineConfig({
     },
     plugins: [
         Vue({
-            include: [/\.vue$/]
+            include: [/\.vue$/],
+            template: {
+                compilerOptions: {
+                    isCustomElement: (tag) => tag.startsWith("i-")
+                }
+            }
         }),
         Pages({
             extensions: ["vue"]

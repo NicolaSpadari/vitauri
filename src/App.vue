@@ -1,11 +1,11 @@
 <template>
     <Navbar />
 
-    <router-view v-slot="{ Component }">
+    <RouterView v-slot="{ Component }">
         <Suspense>
             <component :is="Component" />
         </Suspense>
-    </router-view>
+    </RouterView>
 </template>
 
 <style lang="scss">
@@ -18,7 +18,4 @@
 		-webkit-user-drag: none;
 		@apply select-none;
 	}
-    [container]{
-        @apply mx-auto;
-    }
 </style>

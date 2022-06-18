@@ -1,15 +1,21 @@
 <template>
-    <div container class="flex flex-col h-screen justify-center items-center text-center">
-        <img src="/logo.png" class="w-40 h-40 mx-auto">
-        <p class="text-5xl font-bold text-accent mt-5 mb-10">
+    <div crate flex flex-col h-screen justify-center items-center text-center space-y-10>
+        <img src="/logo.png" w-40 h-40 mx-auto>
+        <p text-5xl font-bold text-accent animate-pulse>
             Hello Vite + Tauri!
         </p>
 
-        <p class="text-white mt-5">
-            Currently running Tauri: {{ tauriVersion }}
-        </p>
+        <div space-y-4>
+            <p text-white>
+                Currently running Tauri v{{ tauriVersion }}
+            </p>
+            <p text-sm text-gray-500>
+                Powered by <a href="https://github.com/unocss/unocss" target="_blank" underline text-accent>UNOcss</a>
+            </p>
+        </div>
+        
 
-        <a href="https://tauri.studio/" class="text-white underline mt-10">
+        <a href="https://tauri.studio/" text-white underline>
             Open the docs
         </a>
     </div>

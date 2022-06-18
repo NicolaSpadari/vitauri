@@ -1,7 +1,7 @@
 {
     "package": {
         "productName": "vitauri",
-        "version": "1.1.0"
+        "version": "1.2.0"
     },
     "build": {
         "distDir": "../dist",
@@ -10,6 +10,10 @@
         "beforeBuildCommand": ""
     },
     "tauri": {
+        "systemTray": {
+            "iconPath": "./icons/icon.png",
+            "iconAsTemplate": true
+        },
         "bundle": {
             "active": true,
             "targets": "all",
