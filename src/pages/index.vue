@@ -13,11 +13,19 @@
                 Powered by <a href="https://github.com/unocss/unocss" target="_blank" underline text-accent>UNOcss</a>
             </p>
         </div>
-        
 
-        <a href="https://tauri.studio/" text-white underline>
-            Open the docs
-        </a>
+        <div space-y-5>
+            <a href="https://tauri.studio/" text-white underline>
+                Open the docs
+            </a>
+
+            <p text-gray-500 italic text-sm>
+                Made by
+                <a href="https://github.com/NicolaSpadari" underline transition-colors hover="text-gray-400">
+                    Nicola Spadari
+                </a>
+            </p>
+        </div>
     </div>
 </template>
 

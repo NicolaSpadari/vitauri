@@ -4,8 +4,15 @@ import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
-import { DirResolverHelper, dirResolver } from "vite-auto-import-resolvers";
 import UnoCSS from "unocss/vite";
+
+import type { Resolver } from "unplugin-auto-import/dist/types";
+
+const composableResolver: Resolver = (name: string) => {
+    if (name.startsWith("use")) {
+        return `@/composables/${name}`;
+    }
+};
 
 export default defineConfig({
     resolve: {
@@ -31,7 +38,6 @@ export default defineConfig({
             dirs: ["src/components"],
             deep: false
         }),
-        DirResolverHelper(),
         AutoImport({
             imports: [
                 "vue",
@@ -43,7 +49,7 @@ export default defineConfig({
                     "@tauri-apps/api/notification": ["sendNotification", "requestPermission", "isPermissionGranted"]
                 }
             ],
-            resolvers: [dirResolver()],
+            resolvers: [composableResolver],
             dts: "src/auto-imports.d.ts"
         })
     ],
