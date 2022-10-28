@@ -28,7 +28,7 @@ Build super fast desktop applications!
 - Typescript + linting
 - API auto import (you can add more or disable some in the `vite.config.ts` file) by `unplugin-auto-import`
 - Components auto import by `unplugin-vue-components`
-- Composables auto import
+- Composables auto import by `vite-auto-import-resolvers`
 - File system based routing by `vite-plugin-pages`
 - Useful set of composable APIs by `@vueuse/core`
 
