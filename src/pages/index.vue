@@ -1,3 +1,12 @@
+<route>
+    {
+        name: "Home",
+        meta: {
+            icon: "home"
+        }
+    }
+</route>
+
 <template>
     <div crate flex flex-col h-screen justify-center items-center text-center space-y-10>
         <img src="/logo.png" w-40 h-40 mx-auto>
@@ -10,7 +19,7 @@
                 Currently running Tauri v{{ tauriVersion }}
             </p>
             <p text-sm text-gray-500>
-                Powered by <a href="https://github.com/unocss/unocss" target="_blank" underline text-accent>UNOcss</a>
+                Powered by <a href="https://github.com/unocss/unocss" target="_blank" underline text-accent>UnoCSS</a>
             </p>
         </div>
 

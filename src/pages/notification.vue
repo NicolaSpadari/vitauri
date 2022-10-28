@@ -1,3 +1,12 @@
+<route>
+    {
+        name: "Notification",
+        meta: {
+            icon: "i-heroicons-solid-bell"
+        }
+    }
+</route>
+
 <template>
     <div crate space-y-20 mt-30>
         <PageTitle>

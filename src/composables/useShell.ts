@@ -1,4 +1,4 @@
-export default async function useShell(cmd: string, shell = "pwsh", cb = Function()): Promise<any> {
+const useShell = async (cmd: string, shell = "pwsh", cb = Function()): Promise<any> => {
     const result = ref();
 
     try {
@@ -11,3 +11,6 @@ export default async function useShell(cmd: string, shell = "pwsh", cb = Functio
 
     return result.value;
 }
+
+export default useShell;
+export { useShell };
