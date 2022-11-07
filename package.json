@@ -1,7 +1,8 @@
 {
     "name": "vitauri",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "private": true,
+    "packageManager": "pnpm@7.14.2",
     "scripts": {
         "dev": "npx kill-port 8080 && start vite && start tauri dev",
         "build": "vite build && tauri build",
@@ -14,19 +15,20 @@
         "vue-router": "^4.1.6"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^0.27.0",
+        "@antfu/eslint-config": "^0.29.4",
         "@iconify-json/heroicons-outline": "^1.1.4",
         "@iconify-json/heroicons-solid": "^1.1.5",
         "@tauri-apps/cli": "^1.1.1",
-        "@types/node": "^18.11.7",
+        "@types/node": "^18.11.9",
         "@vitejs/plugin-vue": "^3.2.0",
-        "eslint": "^8.26.0",
-        "sass": "^1.55.0",
-        "unocss": "^0.46.1",
+        "eslint": "^8.27.0",
+        "sass": "^1.56.0",
+        "typescript": "^4.8.4",
+        "unocss": "^0.46.3",
         "unplugin-auto-import": "^0.11.4",
         "unplugin-vue-components": "^0.22.9",
-        "vite": "^3.2.1",
-        "vite-auto-import-resolvers": "^3.0.1",
+        "vite": "^3.2.3",
+        "vite-auto-import-resolvers": "^3.0.3",
         "vite-plugin-pages": "^0.27.1"
     }
 }

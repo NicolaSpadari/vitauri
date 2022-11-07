@@ -34,34 +34,35 @@ Build super fast desktop applications!
 
 ## Setup
 
-  Before running this app, you need to configure your environment. Take a look at the [tauri docs](https://tauri.studio/docs/getting-started/prerequisites/)
+  - This project uses [pnpm](https://pnpm.io). For a better development experience, I recommend using [@antfu/ni](https://github.com/antfu/ni). In alternative use a package manager of your choice.
+  - Before running this app, you need to configure your environment. Take a look at the [tauri docs](https://tauri.studio/docs/getting-started/prerequisites/)
 
-  ```bash
+  ```sh
   # use this template
-  npx degit NicolaSpadari/vitauri my-tauri-app
+  $ npx degit NicolaSpadari/vitauri my-tauri-app
 
   # go into the folder
-  cd my-tauri-app
+  $ cd my-tauri-app
 
   # install dependencies
-  npm i
+  $ ni
 
   # start the project
-  npm run dev
+  $ nr dev
   ```
 
   This will fire up two shells, one for Vite and one for Tauri, simultaneously. Your project will run in a new window when ready.
 
   To build the application:
 
-  ```bash
-  npm run build
+  ```sh
+  $ nr build
   ```
 
   To build the application with devtools enabled for debug:
 
-  ```bash
-  npm run build:debug
+  ```sh
+  $ nr build:debug
   ```
 
 ## Debugging
