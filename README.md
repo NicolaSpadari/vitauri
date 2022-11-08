@@ -56,13 +56,13 @@ Build super fast desktop applications!
   To build the application:
 
   ```sh
-  $ pnpm run build # or just nr build
+  $ pnpm run build # or just "nr build"
   ```
 
   To build the application with devtools enabled for debug:
 
   ```sh
-  $ pnpm run build:debug # or just nr build:debug
+  $ pnpm run build:debug # or just "nr build:debug"
   ```
 
 ## Debugging
