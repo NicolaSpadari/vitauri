@@ -45,10 +45,10 @@ Build super fast desktop applications!
   $ cd my-tauri-app
 
   # install dependencies
-  $ ni
+  $ pnpm install # or just "ni"
 
   # start the project
-  $ nr dev
+  $ pnpm run dev # or just "nr dev"
   ```
 
   This will fire up two shells, one for Vite and one for Tauri, simultaneously. Your project will run in a new window when ready.
@@ -56,13 +56,13 @@ Build super fast desktop applications!
   To build the application:
 
   ```sh
-  $ nr build
+  $ pnpm run build # or just nr build
   ```
 
   To build the application with devtools enabled for debug:
 
   ```sh
-  $ nr build:debug
+  $ pnpm run build:debug # or just nr build:debug
   ```
 
 ## Debugging
