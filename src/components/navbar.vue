@@ -9,7 +9,7 @@
 
                 <div space-x-8>
                     <template v-for="route in $router.getRoutes()">
-                        <RouterLink v-if="route.path !== '/'" :key="route.path" :to="route.path" text-white underline capitalize space-x-2>
+                        <RouterLink v-if="route.path !== '/'" :key="route.path" :to="route.path" text-white no-underline capitalize space-x-2>
                             <span :class="route.meta.icon" w-5 h-5 />
                             <span align-middle>{{ route.name }}</span>
                         </RouterLink>

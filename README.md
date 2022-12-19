@@ -35,7 +35,8 @@ Build super fast desktop applications!
 ## Setup
 
   - This project uses [pnpm](https://pnpm.io). For a better development experience, I recommend using [@antfu/ni](https://github.com/antfu/ni). In alternative use a package manager of your choice.
-  - Before running this app, you need to configure your environment. Take a look at the [tauri docs](https://tauri.studio/docs/getting-started/prerequisites/)
+  - Before running this app, you need to configure your environment. Take a look at the [tauri docs](https://tauri.studio/docs/getting-started/prerequisites/).
+  - The program stops processes on port `8080` to run Vitauri. If you need that port, change it under the `server` section in the `vite.config.ts` and in the `scripts` section in `package.json`.
 
   ```sh
   # use this template
@@ -66,13 +67,13 @@ Build super fast desktop applications!
   ```
 
 ## Debugging
-You can simply open the console as you would normally in the browser during development.
+You can simply open the console as you normally would in the browser during development.
 <br>
-You need to compile the app in debug mode to test it when you want to debug your builded project.
+You need to compile the app in debug mode to test it when you want to debug your built project.
 
 ## Notes
 
-I built this simple demo wrapping the `shell` api and the `notification` api in a composable.
+I built this simple demo by wrapping `shell` and `notification` APIs in a composable.
 <br>
 If you don't need this, you can just remove it and call the functions directly, for example if you need to handle the output in a more specific way.
 I'm also auto importing some of the APIs through `unplugin-auto-import`, if this creates confusion feel free to remove them and import them manually.

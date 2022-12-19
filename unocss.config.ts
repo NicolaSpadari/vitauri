@@ -14,6 +14,7 @@ export default defineConfig({
     shortcuts: [
         ["crate", "max-w-5xl mx-auto"]
     ],
+    safelist: ["i-heroicons-solid-command-line", "i-heroicons-solid-bell", "i-heroicons-solid-home"],
     presets: [
         presetUno(),
         presetTagify(),

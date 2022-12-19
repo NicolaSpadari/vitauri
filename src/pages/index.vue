@@ -2,7 +2,7 @@
     {
         name: "Home",
         meta: {
-            icon: "home"
+            icon: "i-heroicons-solid-home"
         }
     }
 </route>

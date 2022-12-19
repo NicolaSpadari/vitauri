@@ -1,34 +1,34 @@
 {
     "name": "vitauri",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "private": true,
-    "packageManager": "pnpm@7.14.2",
+    "packageManager": "pnpm@7.18.2",
     "scripts": {
         "dev": "npx kill-port 8080 && start vite && start tauri dev",
         "build": "vite build && tauri build",
         "build:debug": "vite build && tauri build --debug"
     },
     "dependencies": {
-        "@tauri-apps/api": "^1.1.0",
-        "@vueuse/core": "^9.4.0",
-        "vue": "^3.2.41",
+        "@tauri-apps/api": "^1.2.0",
+        "@vueuse/core": "^9.7.0",
+        "vue": "^3.2.45",
         "vue-router": "^4.1.6"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^0.29.4",
-        "@iconify-json/heroicons-outline": "^1.1.4",
-        "@iconify-json/heroicons-solid": "^1.1.5",
-        "@tauri-apps/cli": "^1.1.1",
-        "@types/node": "^18.11.9",
-        "@vitejs/plugin-vue": "^3.2.0",
-        "eslint": "^8.27.0",
-        "sass": "^1.56.0",
-        "typescript": "^4.8.4",
-        "unocss": "^0.46.3",
-        "unplugin-auto-import": "^0.11.4",
-        "unplugin-vue-components": "^0.22.9",
-        "vite": "^3.2.3",
+        "@antfu/eslint-config": "^0.34.0",
+        "@iconify-json/heroicons-outline": "^1.1.5",
+        "@iconify-json/heroicons-solid": "^1.1.6",
+        "@tauri-apps/cli": "^1.2.2",
+        "@types/node": "^18.11.17",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "eslint": "^8.30.0",
+        "sass": "^1.57.0",
+        "typescript": "^4.9.4",
+        "unocss": "^0.47.6",
+        "unplugin-auto-import": "^0.12.1",
+        "unplugin-vue-components": "^0.22.12",
+        "vite": "^4.0.2",
         "vite-auto-import-resolvers": "^3.0.3",
-        "vite-plugin-pages": "^0.27.1"
+        "vite-plugin-pages": "^0.28.0"
     }
 }
