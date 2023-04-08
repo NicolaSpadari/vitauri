@@ -1,11 +1,10 @@
-import { resolve } from "path";
+import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import UnoCSS from "unocss/vite";
-import { DirResolverHelper, dirResolver } from "vite-auto-import-resolvers";
 
 export default defineConfig({
     resolve: {
@@ -31,7 +30,6 @@ export default defineConfig({
             dirs: ["src/components"],
             deep: false
         }),
-        DirResolverHelper(),
         AutoImport({
             imports: [
                 "vue",
@@ -40,11 +38,11 @@ export default defineConfig({
                 {
                     "@tauri-apps/api/app": ["getName", "getVersion", "getTauriVersion"],
                     "@tauri-apps/api/shell": ["Command"],
+                    "@tauri-apps/api/os": ["platform"],
                     "@tauri-apps/api/notification": ["sendNotification", "requestPermission", "isPermissionGranted"]
                 }
             ],
-            resolvers: [dirResolver()],
-            dts: "src/auto-imports.d.ts"
+            dirs: ["./src/composables"]
         })
     ],
     build: {

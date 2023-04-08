@@ -1,12 +1,12 @@
 [package]
 name = "vitauri"
-version = "1.5.2"
+version = "1.6.0"
 description = "Vite + Tauri starter template"
 authors = ["NicolaSpadari"]
 license = "MIT"
 repository = "https://github.com/NicolaSpadari/vitauri"
 edition = "2021"
-rust-version = "1.66.0"
+rust-version = "1.68.2"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -16,7 +16,7 @@ tauri-build = { version = "1.2.1", features = [] }
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2.2", features = ["notification-all", "shell-all", "system-tray"] }
+tauri = { version = "1.2.4", features = ["notification-all", "shell-all", "system-tray"] }
 
 [features]
 # by default Tauri runs in production mode
