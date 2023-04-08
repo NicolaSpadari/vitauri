@@ -25,6 +25,7 @@
         "vue/component-tags-order": ["error", {
             "order": ["template", "script", "style"]
         }],
-        "vue/valid-attribute-name": ["off"]
+        "vue/valid-attribute-name": ["off"],
+        "antfu/top-level-function": ["off"]
     }
 }
