@@ -32,6 +32,10 @@ Build super fast desktop applications!
 - File system based routing by `vite-plugin-pages`
 - Useful set of composable APIs by `@vueuse/core`
 
+## Compatibility
+
+This app is made with Windows in mind. Shell APIs will not work in other platforms, you might have to add checks or rework the commands yourself to make it work.
+
 ## Setup
 
   - This project uses [pnpm](https://pnpm.io). For a better development experience, I recommend using [@antfu/ni](https://github.com/antfu/ni). In alternative use a package manager of your choice.
@@ -60,16 +64,14 @@ Build super fast desktop applications!
   $ pnpm run build # or just "nr build"
   ```
 
-  To build the application with devtools enabled for debug:
-
-  ```sh
-  $ pnpm run build:debug # or just "nr build:debug"
-  ```
-
 ## Debugging
-You can simply open the console as you normally would in the browser during development.
+Durind development you can simply open the console as you normally would in the browser during development.
 <br>
-You need to compile the app in debug mode to test it when you want to debug your built project.
+You need to compile the app in debug mode to test it when you want to debug your built project:
+
+```sh
+$ pnpm run build:debug # or just "nr build:debug"
+```
 
 ## Notes
 
