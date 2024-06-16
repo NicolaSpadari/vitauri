@@ -1,3 +1,5 @@
+> Enjoying ViTauri? Check [Nuxtor](https://github.com/NicolaSpadari/nuxtor), a spiritual successor of ViTauri made with Nuxt 3 and Tauri v2
+
 <p align="center">
     <img width="150" src="./public/logo.png" alt="logo">
 </p>
